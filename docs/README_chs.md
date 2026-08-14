@@ -31,11 +31,8 @@
 </p>
 
 <p align="center">
-    <a href="https://ko-fi.com/H2H83E5J3"><img alt="Screenshot" src="https://ko-fi.com/img/githubbutton_sm.svg"></a>
-</p>
-
-<p align="center">
-    <a href="#"><img alt="Screenshot" src="https://github.com/ThePBone/GalaxyBudsClient/blob/master/screenshots/screencap.gif"></a>
+  <span><a href="https://ko-fi.com/H2H83E5J3"><img alt="Screenshot" src="https://ko-fi.com/img/githubbutton_sm.svg"></a>
+  <a href="#"><img alt="Screenshot" src="https://github.com/timschneeb/GalaxyBudsClient/raw/master/screenshots/app_dark.png"></a></span>
 </p>
 
 ## 主要功能
@@ -53,11 +50,47 @@
 
 ## 下载
 
-在 [release](https://github.com/ThePBone/GalaxyBudsClient/releases) 页面中获取 Windows 和 Linux 的二进制文件。安装前请阅读发行说明。
+有几个可用的 Linux 软件包：
+* [Flatpak（适用于所有 Linux 发行版）](#flatpak)
+* [AUR 软件包（Arch Linux）](#aur-package)
+
+在 [release](https://github.com/ThePBone/GalaxyBudsClient/releases) 页面中获取 Windows 的二进制文件。安装前请阅读发行说明。
+
+在这里下载桌面版本：
 
 <p align="center">
     <a href="https://github.com/ThePBone/GalaxyBudsClient/releases"><img alt="Download" src="https://github.com/ThePBone/GalaxyBudsClient/blob/master/screenshots/download.png"></a>
 </p>
+
+在这里下载 Android 版本（收费）：
+
+<p align="center">
+  <a href='https://play.google.com/store/apps/details?id=me.timschneeberger.galaxybudsclient&utm_source=github&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+    <img width="300" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/>
+  </a>
+</p>
+
+### Flatpak
+
+适用于所有 Linux 发行版的通用二进制包。Flatpak 版本不支持自动启动，除非手动设置。你可以使用 `galaxybudsclient /StartMinimized` 在启动时静默启动应用。
+
+可在 FlatHub 下载：https://flathub.org/apps/me.timschneeberger.GalaxyBudsClient
+```
+flatpak install me.timschneeberger.GalaxyBudsClient
+```
+
+<a href='https://flathub.org/apps/me.timschneeberger.GalaxyBudsClient'><img width='240' alt='Download on Flathub' src='https://dl.flathub.org/assets/badges/flathub-badge-en.png'/></a>
+
+> **注意**：Flatpak 是沙盒化的。默认情况下，这个应用只能访问 `~/.var/app/me.timschneeberger.GalaxyBudsClient/`。
+
+
+### AUR 软件包
+
+@joscdk 维护的 Arch Linux 平台的 [AUR 包](https://aur.archlinux.org/packages/galaxybudsclient-bin/) 也可供下载：
+
+```
+yay -S galaxybudsclient-bin
+```
 
 ### winget
 
@@ -65,14 +98,6 @@ Windows 版本也在 Windows Package Manager (winget) 提供安装
 
 ```
 winget install ThePBone.GalaxyBudsClient
-```
-
-### AUR 包
-
-@joscdk 维护的 Arch Linux 平台的 [AUR 包](https://aur.archlinux.org/packages/galaxybudsclient-bin/) 也可获得：
-
-```
-yay -S galaxybudsclient-bin
 ```
 
 ## 工作原理
